@@ -1,0 +1,188 @@
+#csswrap {
+	font-size: 16px;
+}
+div.leftcol {
+	margin: 0;
+	padding: 0;
+	display:block;
+	width:100%;
+	box-sizing: border-box;
+}
+div.leftcol ul {
+	margin: 0;
+	padding: 0;
+	display:block;
+	box-sizing: border-box;
+}
+ul.tabs li {
+	text-align:center;
+	padding:1em;
+	list-style:none;
+	margin:0;
+	border:1px solid #c5c5c5;
+	text-transform: uppercase;
+	cursor:pointer;
+}
+ul.tabs li:hover, div.csspage ul.list > li:hover {
+	background:#000000 !important;
+	color:#e94639;
+	cursor:pointer;
+}
+ul.tabs li.selected, div.csspage ul.list > li.selected {
+	color:#e94639;
+	background: #333333;
+}
+h2.csspagetitle {
+	text-transform: capitalize;
+}
+ul.selectlist li, ul.projectlist li {
+	padding:.5em;
+	border: .5em;
+	border:1px solid #c5c5c5;
+	font-weight:500;
+	list-style:none;
+}
+ul.selectlist li.files span.filename {
+	font-weight:500;
+	font-size:1em;
+}
+ul.projectlist li span.date {
+	font-size: .8em;
+	margin-right:1em;
+	font-weight:300;
+	text-decoration:none;
+	color:#333333
+}
+ul.projectlist li a.project {
+	font-weight:500;
+	font-size:1em;
+	color: #333333;
+	text-decoration:none;
+	cursor:pointer;
+}
+ul.selectlist li.files span.remove, ul.selectlist li.files a, ul.projectlist li a.remove {
+	font-size: .8em;
+	margin-right:1em;
+	font-weight:300;
+	cursor:pointer;
+	text-decoration:none;
+	color:#333333
+}
+ul.selectlist li.files span.remove:hover, ul.selectlist li.files a:hover,  ul.projectlist li a.remove:hover, ul.projectlist li a.project:hover {
+	cursor:pointer;
+	border-bottom:2px solid #e94639;
+}
+div.csserror, div.cssnotice {
+	padding:1em;
+	margin:1em;
+}
+div.csserror ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+div.csserror {
+	background: rgba(233,70,57,0.5);
+	border: 2px solid #e94639;
+}
+div.cssnotice {
+	background: rgba(57,233,70,0.5);
+	border: 2px solid #39e946;
+}
+div.pages {
+	width:100%;
+	box-sizing: border-box;
+}
+div.csspage {
+	margin:1em;
+	box-sizing: border-box;
+}
+div.csspage ul {
+	clear:both;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+div.csspage ul.list > li {
+	padding:.75em;
+	text-transform: capitalize;
+	text-align:center;
+	border:1px solid #c5c5c5;
+}
+div.csspage ul.list > li:after {
+	content: '\25C0';
+	position:absolute;
+	right:3em;
+}
+div.csspage ul.list > li.selected:after {
+	content: '\25bc';
+	position:absolute;
+	right:3em;
+}
+div.csspage ul.list > ul.sublist {
+	width:25%;
+	min-width:200px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+div.csspage ul.list > ul.sublist > li{
+	font-weight:700;
+	font-size:1.1em;
+	padding: .5em 0;
+	text-transform: capitalize;
+}
+
+div.csspage ul.list ul.sublist li label:hover {
+	cursor:pointer;
+	border-bottom:2px solid #e94639;
+}
+
+div.results {
+	width:100%;
+	border: 1px solid #cccccc;
+}
+
+div#tab-additionalinfo input, div#tab-additionalinfo textarea {
+	width:100%;
+}
+div#tab-additionalinfo textarea {
+	min-height:10em;
+}
+div.addprojectdetails, div.button.submit {
+	border:2px solid #e94639 !important;
+	padding:1em;
+	margin:1em;
+	cursor:pointer;
+	line-height:1.7em;
+}
+div.addprojectdetails:hover, div.button.submit:hover {
+	background: #000000;
+	color:#e94639 !important;
+}
+div.addprojectdetails:hover:before, div.button.submit:hover:before {
+	background: #e94639;
+	color:#ffffff;
+}
+div.addprojectdetails:before, div.button.submit:before {
+	content: '\25b6';
+	background: #e94639;
+	padding:1.3em;
+	margin-left:-1em;
+	margin-right:1em;
+}
+
+@media only screen and (min-width: 600px) {
+	div#tab-additionalinfo input, div#tab-additionalinfo textarea {
+		width:100%;
+	}
+	div.leftcol {
+		width:30%;
+		float:left;
+		clear:left;
+	}
+	div.pages {
+		width:70%;
+		float:right;
+	}
+}

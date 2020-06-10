@@ -1,0 +1,246 @@
+[
+    {
+        "name": "itbz/fpdf",
+        "version": "1.7.3",
+        "version_normalized": "1.7.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mreg-archive/fpdf.git",
+            "reference": "63340096907ef7525a9002d1ae3d0fd1ff376a6d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mreg-archive/fpdf/zipball/63340096907ef7525a9002d1ae3d0fd1ff376a6d",
+            "reference": "63340096907ef7525a9002d1ae3d0fd1ff376a6d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-05-27T09:02:54+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "fpdf": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "no usage restriction"
+        ],
+        "description": "Unofficial PSR-0 compliant version of the FPDF library",
+        "homepage": "http://www.fpdf.org/",
+        "abandoned": "setasign/fpdf"
+    },
+    {
+        "name": "itbz/fpdi",
+        "version": "1.6.1",
+        "version_normalized": "1.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mreg-archive/fpdi.git",
+            "reference": "3189f4662a5bbd3838309368d9fc7f5a31c08a6f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mreg-archive/fpdi/zipball/3189f4662a5bbd3838309368d9fc7f5a31c08a6f",
+            "reference": "3189f4662a5bbd3838309368d9fc7f5a31c08a6f",
+            "shasum": ""
+        },
+        "require": {
+            "itbz/fpdf": "~1.7",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "hanneskod/classtools": "~1.0",
+            "nikic/php-parser": "~1.0",
+            "phpunit/phpunit": "4.*",
+            "symfony/finder": "~2.3",
+            "tecnickcom/tcpdf": "^6.2.12"
+        },
+        "suggest": {
+            "tecnickcom/tcpdf": "FPDI supports TCPDF as a replacement for FPDF"
+        },
+        "time": "2016-03-02T19:45:05+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "fpdi\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Unofficial PSR-4 compliant version of the FPDI library",
+        "abandoned": "setasign/fpdi"
+    },
+    {
+        "name": "jurosh/pdf-merge",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jurosh/php-pdf-merge.git",
+            "reference": "64cf4edda347239e2864fd3f777f503650f20215"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jurosh/php-pdf-merge/zipball/64cf4edda347239e2864fd3f777f503650f20215",
+            "reference": "64cf4edda347239e2864fd3f777f503650f20215",
+            "shasum": ""
+        },
+        "require": {
+            "itbz/fpdi": "^1.5",
+            "php": ">=5.3.0"
+        },
+        "time": "2015-08-04T21:25:40+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/Jurosh/PDFMerge/PDFMerger.php",
+                "src/Jurosh/PDFMerge/PDFObject.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Juraj Husar",
+                "email": "jurosh@jurosh.com",
+                "homepage": "http://jurosh.com"
+            }
+        ],
+        "description": "PHP PDF Merger",
+        "homepage": "https://github.com/jurosh/php-pdf-merge",
+        "keywords": [
+            "merge",
+            "pdf"
+        ]
+    },
+    {
+        "name": "spipu/html2pdf",
+        "version": "v5.2.1",
+        "version_normalized": "5.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/spipu/html2pdf.git",
+            "reference": "7dca57b61fdb2d6920635ff2332dbc82d4be19f3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/spipu/html2pdf/zipball/7dca57b61fdb2d6920635ff2332dbc82d4be19f3",
+            "reference": "7dca57b61fdb2d6920635ff2332dbc82d4be19f3",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mbstring": "*",
+            "php": "^5.4 || ^7.0",
+            "tecnickcom/tcpdf": "^6.2"
+        },
+        "require-dev": {
+            "phake/phake": "^2.0",
+            "phpunit/phpunit": "^4.0 || ^5.0",
+            "squizlabs/php_codesniffer": "^3.0"
+        },
+        "suggest": {
+            "ext-gd": "Allows to embed images into the PDF",
+            "fagundes/zff-html2pdf": "if you need to integrate Html2Pdf with Zend Framework 2 (zf2)"
+        },
+        "time": "2018-10-26T13:33:18+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Spipu\\Html2Pdf\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OSL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Spipu",
+                "homepage": "https://github.com/spipu",
+                "role": "Developer"
+            }
+        ],
+        "description": "Html2Pdf is a HTML to PDF converter written in PHP5 (it uses TCPDF). OFFICIAL PACKAGE",
+        "homepage": "http://html2pdf.fr/",
+        "keywords": [
+            "html",
+            "html2pdf",
+            "pdf"
+        ]
+    },
+    {
+        "name": "tecnickcom/tcpdf",
+        "version": "6.2.26",
+        "version_normalized": "6.2.26.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tecnickcom/TCPDF.git",
+            "reference": "367241059ca166e3a76490f4448c284e0a161f15"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/367241059ca166e3a76490f4448c284e0a161f15",
+            "reference": "367241059ca166e3a76490f4448c284e0a161f15",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2018-10-16T17:24:05+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "config",
+                "include",
+                "tcpdf.php",
+                "tcpdf_parser.php",
+                "tcpdf_import.php",
+                "tcpdf_barcodes_1d.php",
+                "tcpdf_barcodes_2d.php",
+                "include/tcpdf_colors.php",
+                "include/tcpdf_filters.php",
+                "include/tcpdf_font_data.php",
+                "include/tcpdf_fonts.php",
+                "include/tcpdf_images.php",
+                "include/tcpdf_static.php",
+                "include/barcodes/datamatrix.php",
+                "include/barcodes/pdf417.php",
+                "include/barcodes/qrcode.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Nicola Asuni",
+                "email": "info@tecnick.com",
+                "role": "lead"
+            }
+        ],
+        "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
+        "homepage": "http://www.tcpdf.org/",
+        "keywords": [
+            "PDFD32000-2008",
+            "TCPDF",
+            "barcodes",
+            "datamatrix",
+            "pdf",
+            "pdf417",
+            "qrcode"
+        ]
+    }
+]
